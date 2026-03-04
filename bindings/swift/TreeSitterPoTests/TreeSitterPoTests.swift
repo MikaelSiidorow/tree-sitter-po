@@ -1,0 +1,12 @@
+import XCTest
+import SwiftTreeSitter
+import TreeSitterPo
+
+final class TreeSitterPoTests: XCTestCase {
+    func testCanLoadGrammar() throws {
+        let parser = Parser()
+        let language = Language(language: tree_sitter_po())
+        XCTAssertNoThrow(try parser.setLanguage(language),
+                         "Error loading PO grammar")
+    }
+}

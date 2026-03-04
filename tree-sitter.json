@@ -1,0 +1,41 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "po",
+      "camelcase": "Po",
+      "title": "PO",
+      "scope": "source.po",
+      "file-types": [
+        "pot",
+        "po"
+      ],
+      "injection-regex": "^po$",
+      "class-name": "TreeSitterPo"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "PO (gettext) grammar for tree-sitter",
+    "authors": [
+      {
+        "name": "Mikael Siidorow",
+        "email": "mikael@siidorow.com",
+        "url": "https://siidorow.com/"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/mikaelsiidorow/tree-sitter-po"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
