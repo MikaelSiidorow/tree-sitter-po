@@ -1,0 +1,65 @@
+================================================================================
+PO file header
+================================================================================
+
+msgid ""
+msgstr ""
+"Project-Id-Version: myproject\n"
+"POT-Creation-Date: 2024-01-01 00:00+0000\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (message
+    (msgid
+      (string))
+    (msgstr
+      (string)
+      (string)
+      (string)
+      (string)
+      (string))))
+
+================================================================================
+Full file with header and messages
+================================================================================
+
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+
+#: src/app.tsx:1
+msgid "Hello"
+msgstr "Hej"
+
+#: src/app.tsx:2
+msgid "Bye"
+msgstr "Hejdå"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (message
+    (msgid
+      (string))
+    (msgstr
+      (string)
+      (string)))
+  (message
+    (comments
+      (comment
+        (reference_comment)))
+    (msgid
+      (string))
+    (msgstr
+      (string)))
+  (message
+    (comments
+      (comment
+        (reference_comment)))
+    (msgid
+      (string))
+    (msgstr
+      (string))))

@@ -1,0 +1,118 @@
+================================================================================
+Simple obsolete entry
+================================================================================
+
+#~ msgid "Old message"
+#~ msgstr "Gammalt meddelande"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (obsolete_entry
+    (obsolete_comment)
+    (obsolete_comment)))
+
+================================================================================
+Obsolete entry with preceding comments
+================================================================================
+
+#: src/old.tsx:10
+#~ msgid "Old message"
+#~ msgstr "Gammalt meddelande"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (obsolete_entry
+    (comments
+      (comment
+        (reference_comment)))
+    (obsolete_comment)
+    (obsolete_comment)))
+
+================================================================================
+Adjacent obsolete entries merge into one
+================================================================================
+
+#~ msgid "First old"
+#~ msgstr "Första gamla"
+
+#~ msgid "Second old"
+#~ msgstr "Andra gamla"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (obsolete_entry
+    (obsolete_comment)
+    (obsolete_comment)
+    (obsolete_comment)
+    (obsolete_comment)))
+
+================================================================================
+Obsolete entries separated by active message
+================================================================================
+
+#~ msgid "First old"
+#~ msgstr "Första gamla"
+
+msgid "Active"
+msgstr "Aktiv"
+
+#~ msgid "Second old"
+#~ msgstr "Andra gamla"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (obsolete_entry
+    (obsolete_comment)
+    (obsolete_comment))
+  (message
+    (msgid
+      (string))
+    (msgstr
+      (string)))
+  (obsolete_entry
+    (obsolete_comment)
+    (obsolete_comment)))
+
+================================================================================
+Consecutive obsolete lines (single entry)
+================================================================================
+
+#~ msgid "Old"
+#~ msgstr "Gammal"
+#~ msgid "Also old"
+#~ msgstr "Också gammal"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (obsolete_entry
+    (obsolete_comment)
+    (obsolete_comment)
+    (obsolete_comment)
+    (obsolete_comment)))
+
+================================================================================
+Mixed messages and obsolete entries
+================================================================================
+
+msgid "Active"
+msgstr "Aktiv"
+
+#~ msgid "Removed"
+#~ msgstr "Borttagen"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (message
+    (msgid
+      (string))
+    (msgstr
+      (string)))
+  (obsolete_entry
+    (obsolete_comment)
+    (obsolete_comment)))

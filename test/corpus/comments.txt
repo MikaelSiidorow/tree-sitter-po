@@ -1,0 +1,145 @@
+================================================================================
+Translator comment
+================================================================================
+
+# This is a translator comment
+msgid "Hello"
+msgstr "Hej"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (message
+    (comments
+      (comment
+        (translator_comment)))
+    (msgid
+      (string))
+    (msgstr
+      (string))))
+
+================================================================================
+Extracted comment
+================================================================================
+
+#. This is an extracted comment
+msgid "Hello"
+msgstr "Hej"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (message
+    (comments
+      (comment
+        (extracted_comment)))
+    (msgid
+      (string))
+    (msgstr
+      (string))))
+
+================================================================================
+Reference comment
+================================================================================
+
+#: src/app.tsx:42
+msgid "Hello"
+msgstr "Hej"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (message
+    (comments
+      (comment
+        (reference_comment)))
+    (msgid
+      (string))
+    (msgstr
+      (string))))
+
+================================================================================
+Flag comment
+================================================================================
+
+#, fuzzy
+msgid "Hello"
+msgstr "Hej"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (message
+    (comments
+      (comment
+        (flag_comment)))
+    (msgid
+      (string))
+    (msgstr
+      (string))))
+
+================================================================================
+Previous comment
+================================================================================
+
+#| msgid "Old hello"
+msgid "Hello"
+msgstr "Hej"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (message
+    (comments
+      (comment
+        (previous_comment)))
+    (msgid
+      (string))
+    (msgstr
+      (string))))
+
+================================================================================
+Multiple comments on one message
+================================================================================
+
+#: src/app.tsx:42
+#: src/nav.tsx:15
+#, fuzzy
+msgid "Hello"
+msgstr "Hej"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (message
+    (comments
+      (comment
+        (reference_comment))
+      (comment
+        (reference_comment))
+      (comment
+        (flag_comment)))
+    (msgid
+      (string))
+    (msgstr
+      (string))))
+
+================================================================================
+Empty translator comment
+================================================================================
+
+#
+msgid "Hello"
+msgstr "Hej"
+
+--------------------------------------------------------------------------------
+
+(source_file
+  (message
+    (comments
+      (comment
+        (translator_comment)))
+    (msgid
+      (string))
+    (msgstr
+      (string))))
