@@ -1,0 +1,32 @@
+# Sample PO file for testing
+msgid ""
+msgstr ""
+"Project-Id-Version: sample\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/app.tsx:42
+#: src/nav.tsx:15
+#, fuzzy
+msgctxt "navigation"
+msgid "Home"
+msgstr "Hem"
+
+#: src/app.tsx:50
+msgid ""
+"Hello "
+"World"
+msgstr ""
+"Hej "
+"Världen"
+
+#: src/app.tsx:60
+msgid "One item"
+msgid_plural "%d items"
+msgstr[0] "Ett objekt"
+msgstr[1] "%d objekt"
+
+#. This is an extracted comment
+#: src/old.tsx:10
+#~ msgid "Obsolete entry"
+#~ msgstr "Föråldrad post"
