@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.13)
 
-project(tree-sitter-po
+project(tree-sitter-gettext
         VERSION "0.1.0"
         DESCRIPTION "PO (gettext) grammar for tree-sitter"
-        HOMEPAGE_URL "https://github.com/mikaelsiidorow/tree-sitter-po"
+        HOMEPAGE_URL "https://github.com/mikaelsiidorow/tree-sitter-gettext"
         LANGUAGES C)
 
 option(BUILD_SHARED_LIBS "Build using shared libraries" ON)
@@ -26,35 +26,35 @@ add_custom_command(OUTPUT "${CMAKE_CURRENT_SOURCE_DIR}/src/parser.c"
                    WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}"
                    COMMENT "Generating parser.c")
 
-add_library(tree-sitter-po src/parser.c)
+add_library(tree-sitter-gettext src/parser.c)
 if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/src/scanner.c)
-  target_sources(tree-sitter-po PRIVATE src/scanner.c)
+  target_sources(tree-sitter-gettext PRIVATE src/scanner.c)
 endif()
-target_include_directories(tree-sitter-po
+target_include_directories(tree-sitter-gettext
                            PRIVATE src
                            INTERFACE $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/bindings/c>
                                      $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
 
-target_compile_definitions(tree-sitter-po PRIVATE
+target_compile_definitions(tree-sitter-gettext PRIVATE
                            $<$<BOOL:${TREE_SITTER_REUSE_ALLOCATOR}>:TREE_SITTER_REUSE_ALLOCATOR>
                            $<$<CONFIG:Debug>:TREE_SITTER_DEBUG>)
 
-set_target_properties(tree-sitter-po
+set_target_properties(tree-sitter-gettext
                       PROPERTIES
                       C_STANDARD 11
                       POSITION_INDEPENDENT_CODE ON
                       SOVERSION "${TREE_SITTER_ABI_VERSION}.${PROJECT_VERSION_MAJOR}"
                       DEFINE_SYMBOL "")
 
-configure_file(bindings/c/tree-sitter-po.pc.in
-               "${CMAKE_CURRENT_BINARY_DIR}/tree-sitter-po.pc" @ONLY)
+configure_file(bindings/c/tree-sitter-gettext.pc.in
+               "${CMAKE_CURRENT_BINARY_DIR}/tree-sitter-gettext.pc" @ONLY)
 
 install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/bindings/c/tree_sitter"
         DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}"
         FILES_MATCHING PATTERN "*.h")
-install(FILES "${CMAKE_CURRENT_BINARY_DIR}/tree-sitter-po.pc"
+install(FILES "${CMAKE_CURRENT_BINARY_DIR}/tree-sitter-gettext.pc"
         DESTINATION "${CMAKE_INSTALL_LIBDIR}/pkgconfig")
-install(TARGETS tree-sitter-po
+install(TARGETS tree-sitter-gettext
         LIBRARY DESTINATION "${CMAKE_INSTALL_LIBDIR}")
 
 file(GLOB QUERIES queries/*.scm)

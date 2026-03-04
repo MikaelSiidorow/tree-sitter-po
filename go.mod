@@ -1,4 +1,4 @@
-module github.com/mikaelsiidorow/tree-sitter-po
+module github.com/mikaelsiidorow/tree-sitter-gettext
 
 go 1.22
 

@@ -1,13 +1,13 @@
 [package]
-name = "tree-sitter-po"
+name = "tree-sitter-gettext"
 description = "PO (gettext) grammar for tree-sitter"
 version = "0.1.0"
 authors = ["Mikael Siidorow <mikael@siidorow.com>"]
 license = "MIT"
 readme = "README.md"
-keywords = ["incremental", "parsing", "tree-sitter", "po"]
+keywords = ["incremental", "parsing", "tree-sitter", "po", "gettext"]
 categories = ["parser-implementations", "parsing", "text-editors"]
-repository = "https://github.com/mikaelsiidorow/tree-sitter-po"
+repository = "https://github.com/mikaelsiidorow/tree-sitter-gettext"
 edition = "2021"
 autoexamples = false
 

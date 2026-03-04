@@ -1,5 +1,5 @@
-#ifndef TREE_SITTER_PO_H_
-#define TREE_SITTER_PO_H_
+#ifndef TREE_SITTER_GETTEXT_H_
+#define TREE_SITTER_GETTEXT_H_
 
 typedef struct TSLanguage TSLanguage;
 
@@ -13,4 +13,4 @@ const TSLanguage *tree_sitter_po(void);
 }
 #endif
 
-#endif // TREE_SITTER_PO_H_
+#endif // TREE_SITTER_GETTEXT_H_

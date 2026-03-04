@@ -1,4 +1,4 @@
-package tree_sitter_po
+package tree_sitter_gettext
 
 // #cgo CFLAGS: -std=c11 -fPIC
 // #include "../../src/parser.c"

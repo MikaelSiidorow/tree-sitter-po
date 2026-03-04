@@ -1,8 +1,8 @@
 {
-  "name": "tree-sitter-po",
+  "name": "tree-sitter-gettext",
   "version": "0.1.0",
   "description": "PO (gettext) grammar for tree-sitter",
-  "repository": "https://github.com/mikaelsiidorow/tree-sitter-po",
+  "repository": "https://github.com/mikaelsiidorow/tree-sitter-gettext",
   "license": "MIT",
   "author": {
     "name": "Mikael Siidorow",

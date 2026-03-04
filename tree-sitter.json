@@ -11,7 +11,7 @@
         "po"
       ],
       "injection-regex": "^po$",
-      "class-name": "TreeSitterPo"
+      "class-name": "TreeSitterGettext"
     }
   ],
   "metadata": {
@@ -26,7 +26,7 @@
       }
     ],
     "links": {
-      "repository": "https://github.com/mikaelsiidorow/tree-sitter-po"
+      "repository": "https://github.com/mikaelsiidorow/tree-sitter-gettext"
     }
   },
   "bindings": {

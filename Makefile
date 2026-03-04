@@ -2,8 +2,8 @@ ifeq ($(OS),Windows_NT)
 $(error Windows is not supported)
 endif
 
-LANGUAGE_NAME := tree-sitter-po
-HOMEPAGE_URL := https://github.com/mikaelsiidorow/tree-sitter-po
+LANGUAGE_NAME := tree-sitter-gettext
+HOMEPAGE_URL := https://github.com/mikaelsiidorow/tree-sitter-gettext
 VERSION := 0.1.0
 
 # repository

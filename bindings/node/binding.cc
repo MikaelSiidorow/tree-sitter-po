@@ -16,4 +16,4 @@ Napi::Object Init(Napi::Env env, Napi::Object exports) {
     return exports;
 }
 
-NODE_API_MODULE(tree_sitter_po_binding, Init)
+NODE_API_MODULE(tree_sitter_gettext_binding, Init)
